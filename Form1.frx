@@ -1,0 +1,50 @@
+ÿU<html>
+
+<head>
+<title>Your Vote</title>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+</head>
+
+<body>
+
+<table>
+  <tr align="center">
+    <font size="1"><td width="419" bgcolor="black"><font color="white">Your Vote!</font></font></td>
+  </tr>
+  <tr align="center">
+    <font size="1"><td width="419" bgcolor="#B3C4FF"><script Language="JavaScript"><!--
+function FrontPage_Form6_Validator(theForm)
+{
+
+  var radioSelected = false;
+  for (i = 0;  i < theForm.optCodeRatingValue.length;  i++)
+  {
+    if (theForm.optCodeRatingValue[i].checked)
+        radioSelected = true;
+  }
+  if (!radioSelected)
+  {
+    alert("Please select one of the \"Code Rating\" options.");
+    return (false);
+  }
+  return (true);
+}
+//--></script><form
+    method="POST"
+    action="http://www.planet-source-code.com/vb/scripts/voting/VoteOnCodeRating.asp?lngWId=1"
+    onsubmit="return FrontPage_Form6_Validator(this)" name="FrontPage_Form6">
+      <input type="hidden" name="txtCodeId" value="25577"><input type="hidden"
+      name="txtCodeName"
+      value="MultiPart (Sections) HTTP File Downloader (as Flashget, Gozilla, GetSmart)"><input
+      type="hidden" name="intUserRatingTotal" value="9"><input type="hidden"
+      name="intNumOfUserRatings" value="2"><!target="_blank" >
+<p><br>
+      <input type="radio" value="5" name="optCodeRatingValue" checked>Excellent &nbsp;<input
+      type="radio" value="4" name="optCodeRatingValue">Good &nbsp; <input type="submit"
+      value="Rate&nbsp;It!" name="cmdRateIt"> </font></p>
+    </form>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
